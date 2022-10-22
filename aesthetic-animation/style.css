@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  margin: 0;
+  background-color: rgb(47, 79, 79);
+}
+
+:root {
+  --square-side: 150px;
+  --square-offset: 75px;
+}
+
+.square-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  margin: calc(var(--square-side) / 2 - 14%) 0;
+  text-align: center;
+}
+
+.square {
+  display: block;
+  position: fixed;
+  background-color: #59ffac;
+  height: var(--square-side);
+  width: var(--square-side);
+  border-radius: 15%;
+  left: var(--square-offset);
+  top: var(--square-offset);
+
+  animation: move-around 12s ease infinite 1s;
+}
+
+@keyframes move-around {
+  0%,
+  66.6%,
+  100% {
+    transform: rotate(0);
+    left: var(--square-offset);
+    top: var(--square-offset);
+  }
+  16.6% {
+    transform: rotate(890deg);
+    left: calc(100vw - var(--square-offset) - var(--square-side));
+    top: var(--square-offset);
+  }
+  33.3% {
+    transform: rotate(90deg);
+    left: calc(100vw - var(--square-offset) - var(--square-side));
+    top: calc(100vh - var(--square-offset) - var(--square-side));
+  }
+  50% {
+    transform: rotate(480deg);
+    left: var(--square-offset);
+    top: calc(100vh - var(--square-offset) - var(--square-side));
+  }
+  83.3% {
+    transform: rotate(360deg) scale(200%);
+    left: calc(50vw - var(--square-side) / 2);
+    top: calc(50vh - var(--square-side) / 2);
+  }
+}
