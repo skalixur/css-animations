@@ -1,0 +1,114 @@
+body {
+  background-color: beige;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+:root {
+  --panel-1-z: 4;
+  --panel-2-z: 3;
+  --panel-3-z: 2;
+  --panel-4-z: 1;
+
+  --screen-margin: -100%;
+  --screen-cover: -50%;
+}
+
+.panel-1,
+.panel-2,
+.panel-3,
+.panel-4 {
+  box-sizing: border-box;
+  display: flex;
+  font-size: 10vmax;
+  padding: 0.25em;
+  position: absolute;
+}
+
+.panel-1 {
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 80%, 60%, 0.8);
+  z-index: var(--panel-1-z);
+
+  top: var(--screen-margin);
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.panel-2 {
+  transition: 0.5s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(90, 80%, 60%, 0.8);
+  z-index: var(--panel-2-z);
+
+  right: var(--screen-margin);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.panel-3 {
+  transition: 0.5s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(180, 80%, 60%, 0.8);
+  z-index: var(--panel-3-z);
+
+  bottom: var(--screen-margin);
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.panel-4 {
+  transition: 0.5s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(270, 80%, 60%, 0.8);
+  z-index: var(--panel-4-z);
+
+  left: var(--screen-margin);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.panel-1[data-active='true'] {
+  transition: 0.5s;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 80%, 60%, 0.8);
+
+  top: var(--screen-cover);
+}
+
+.panel-2[data-active='true'] {
+  transition: 0.5s;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(90, 80%, 60%, 0.8);
+
+  right: var(--screen-cover);
+}
+
+.panel-3[data-active='true'] {
+  transition: 0.5s;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(180, 80%, 60%, 0.8);
+
+  bottom: var(--screen-cover);
+}
+
+.panel-4[data-active='true'] {
+  transition: 0.5s;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(270, 80%, 60%, 0.8);
+
+  left: var(--screen-cover);
+}
