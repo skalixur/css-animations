@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+  --square-width: 300px;
+}
+
+* {
+  animation: fade-in 10s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    margin-top: calc(2 * var(--square-width));
+    height: calc(0.5 * var(--square-width));
+  }
+  50% {
+    margin-top: calc(var(--square-width));
+    height: calc(1.5 * var(--square-width));
+  }
+}
+
+.rect-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  display: flex;
+}
+
+.rect {
+  width: var(--square-width);
+  height: var(--square-width);
+}
+
+.rect-1 {
+  background-color: #ff4d4d;
+  border-radius: 50px;
+  animation: bounce 4s cubic-bezier(0.63, 0.03, 0.47, 1) 0.5s infinite both;
+  z-index: 4;
+}
+
+.rect-2 {
+  background-color: #ffde66;
+  border-radius: 50px;
+  animation: bounce 4s cubic-bezier(0.63, 0.03, 0.47, 1) 1s infinite both;
+  z-index: 3;
+}
+
+.rect-3 {
+  background-color: #33ff6d;
+  border-radius: 50px;
+  animation: bounce 4s cubic-bezier(0.63, 0.03, 0.47, 1) 1.5s infinite both;
+  z-index: 2;
+}
+
+.rect-4 {
+  background-color: #4051ff;
+  border-radius: 50px;
+  animation: bounce 4s cubic-bezier(0.63, 0.03, 0.47, 1) 2s infinite both;
+  z-index: 1;
+}

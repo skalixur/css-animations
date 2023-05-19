@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: beige;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: NewRodin;
+  src: url('./FOTNewRodin\ Pro\ EB.otf');
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.opt {
+  user-select: none;
+  box-shadow: 3px 3px 5px black;
+  text-shadow: 3px 3px 2.5px black;
+  color: white;
+  cursor: pointer;
+  padding: 1.2vmin 1.4vmin 1.2vmin 1.2vmin;
+  background-color: crimson;
+  border: crimson 0px solid;
+  border-radius: 1.2vmin;
+}
+.options {
+  position: fixed;
+  bottom: 5.5vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 1vmin;
+  margin: 0 0 0 7vmin;
+  font-family: NewRodin;
+  font-weight: 700;
+  font-size: 5vmin;
+}
+
+.spin1 {
+  display: inline;
+  position: fixed;
+  height: 284vmax;
+  width: 1vmax;
+  background-color: crimson;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spin 10s linear infinite forwards;
+}
+
+.spin2 {
+  display: inline;
+  position: fixed;
+  width: 284vmax;
+  height: 1vmax;
+  background-color: crimson;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spin 10s linear infinite forwards;
+}
