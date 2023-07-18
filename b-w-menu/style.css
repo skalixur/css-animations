@@ -86,10 +86,15 @@ body {
   cursor: pointer;
   color: white;
   mix-blend-mode: difference;
+}
+
+a {
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
+  color: white;
   text-decoration: none;
 }
 
