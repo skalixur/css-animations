@@ -7,7 +7,7 @@ font-family: 'Zen Kaku Gothic New', sans-serif;
  */
 
 :root {
-  --scroll-time: 20s;
+  --scroll-time: 4s;
   --line-distance: -45vh;
 
   --left-line-spacing: -20vw;
@@ -126,7 +126,7 @@ a:visited {
   white-space: nowrap;
 
   position: absolute;
-  --move-initial: -22%;
+  --move-initial: -15.5%;
   --move-final: -60%;
 }
 
