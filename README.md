@@ -20,3 +20,5 @@ shows the nearest edge that your mouse is closest to, distance from edge is cust
 ## [eye candy](https://skalixur.com/css-animations/eye-candy)
 
 ## [spinny things](https://skalixur.com/css-animations/spinny-stuff)
+
+## [words.](https://skalixur.com/css-animations/words)
