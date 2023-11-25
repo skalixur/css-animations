@@ -1,7 +1,3 @@
-// setInterval(() => {
-//   window.scrollTo(0, 0)
-// }, 10)
-
 const leftSlider = document.querySelector('.slider-left')
 const rightSlider = document.querySelector('.slider-right')
 
