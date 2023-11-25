@@ -13,3 +13,5 @@ for (let i = 0; i < 20; i++) {
   rightTextElement.innerHTML = `<p class="rgb-split" data-text="${rightText}">${rightText}</p>`
   rightSlider.appendChild(rightTextElement)
 }
+
+// arbitrary change
