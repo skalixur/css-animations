@@ -10,10 +10,10 @@ font-family: 'Zen Kaku Gothic New', sans-serif;
   --scroll-time: 20s;
   --line-distance: -45vh;
 
-  --left-line-spacing: -20vw;
-  --right-line-spacing: -20vw;
-  --left-font-size: 15.5vw;
-  --right-font-size: 15.5vw;
+  --left-line-spacing: -37.5vw;
+  --right-line-spacing: -25vw;
+  --left-font-size: 25vw;
+  --right-font-size: 17.5vw;
   --bg-text-transperancy: 0.12;
 }
 

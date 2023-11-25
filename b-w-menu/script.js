@@ -5,9 +5,9 @@
 const leftSlider = document.querySelector('.slider-left')
 const rightSlider = document.querySelector('.slider-right')
 
-const leftText = '曖昧な' //曖昧な
+const leftText = 'sick'
 
-const rightText = '狂気が' //狂気が
+const rightText = 'game'
 
 for (let i = 0; i < 20; i++) {
   const leftTextElement = document.createElement('li')
